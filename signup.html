@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sign up | AAsports.com | No.1 Online Store</title>
+  <!-- CORE CSS-->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+        
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+      
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+
+<style type="text/css">
+html,
+body {
+/*    height: 100%;*/
+    background-image: url("img/header-bg.jpg");
+    font-family: 'times new roman';
+    font-size: 16px;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.margin {
+  margin: 0 !important;
+}
+    
+.footer{        
+    background-color: orange;
+    font-weight: bold;
+    
+        
+    }
+
+</style>
+    
+    
+<script type="text/javascript">
+    
+  function signup_page(){
+      
+      
+      var i_fname = document.getElementById('fname').value;
+      var i_lname = document.getElementById('lname').value;
+      var i_email = document.getElementById('email').value;
+      var i_pwd = document.getElementById('password').value;
+      var i_cpwd = document.getElementById('confirmpassword').value;
+      
+      if(i_fname == null || i_fname == ''){
+          alert("Please fill your First Name!!");
+      }
+      else if(i_lname == null || i_lname == ''){
+              alert("Please fill your Last Name!!");
+          }
+      
+      else if (i_email == null || i_email == ''){
+          alert("Please fill your Email Address!!");
+      }
+      else if(i_pwd == null || i_pwd == ''){
+          alert("Please enter your password!!");
+      }
+      else if(i_pwd.length < 8){
+          alert("Password must contain atleast 8 characters!!");
+      }
+      else if(i_cpwd == null || i_cpwd == ""){
+          alert("Please confirm your password!!");
+      }
+      
+      else if(i_cpwd.lenght < 8){
+          alert("Password must contain atleast 8 characters!!");
+      }
+      else if(i_pwd != i_cpwd){
+          alert("Passwords does not match!!");
+      }
+       else{
+           
+      alert("THANK YOU Here is your details:\nFirst Name: " +i_fname+ "\nLast Name: " +i_lname+  "\nEmail Address: " +i_email );
+      
+       } 
+      
+      }
+          
+
+    
+</script>
+    
+  
+</head>
+  
+<body background="images\Signup-background.jpg">   
+  
+  <div id="login-page" class="row" >
+    <div class="col s12 z-depth-6 card-panel">
+      <form class="login-form" action="index.html">
+        <div class="row">
+          <div class="input-field col s12 center">
+              <a href="index.html">
+            <img  src="logo1.png" title="Hotels.com | Live Your Life" alt="Hotels.com | Live Your Life" class="responsive-img valign profile-image-login">
+                  </a>
+            <p class="center login-form-text" title="Sign Up Page"><b><font size="6" name="times new roman" >Sign up page</font></b></p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="fname" name="fname" value="" type="text" class="validate" title="Enter first name" placeholder="Enter First Name*:" required="" >
+            
+          </div>
+        </div>
+          <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+              
+            <input id="lname" name="lname" type="text" class="validate" title="Enter last name" placeholder="Enter Last Name*:" required="">
+           
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" name="email" type="email" class="validate" title="Enter email address" placeholder="Enter Email Address*:" required="">
+            
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" title="Enter password" class="validate" placeholder="Enter Password*:" required="">
+            
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="confirmpassword" type="password" title="Confirm password" placeholder="Confirm Password*:" required="">
+           
+          </div>
+        </div>
+          
+
+          
+          
+          <div class="row">          
+          <div class="input-field col s12 m12 l12  login-text">
+              <input type="checkbox" id="agree" title="I agree to the terms and conditons" checked required=""/>
+              <label for="agree">I agree to the terms and conditions</label>
+          </div>
+        </div>
+          
+          
+          
+        <div class="row">
+          <div class="input-field col s12">
+              
+              <button type="submit" style=width:400px onclick ="signup_page()" class="btn waves-effect waves-light col s12" >Register</button>
+                          
+          </div>
+
+        </div>
+          
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Already have an account ? <a href="Login.html">Sign in</a></p>
+              <br>
+          </div>
+      </form>
+    </div>
+  </div>
+            
+
+  <!--  <div class="footer">
+        
+     <center><span class="copyright" >Copyright &copy; Hotels.com "Live your life"</span></center>
+        </div> -->
+
+
+
+
+</body>
+
+</html>

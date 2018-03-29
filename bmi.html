@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+	
+<title>BMI calculator</title>
+
+	
+<!-- Google Fonts -->
+	
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	
+<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	
+<link rel="stylesheet" href="css/style-bmi.css">
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+	
+<div class="container">
+		
+<!--<div class="top">
+			
+<h1 id="title" class="hidden"><span id="logo">Daily <span>UI</span></span></h1>
+		
+</div> -->
+		
+<div class="login-box animated fadeInUp">
+			
+<div class="box-header">
+				
+<a href="index.html"> <img src="logo.png" height="75" width="150"> </a></div>
+		
+	<body>
+		<h1>Body Mass Index Calculator</h1>
+		<p>Enter your height: <input type="text" id="height"/>
+			<select type="multiple" id="heightunits">
+				<option value="feet" selected="selected">meter</option>
+				<option value="inches">inches</option>
+			</select>
+		</p>
+		<p>Enter your weight: <input type="text" id="weight"/>
+			<select type="multiple" id="weightunits">
+				<option value="kg" selected="selected">kilograms</option>
+				<option value="lb">pounds</option>
+			</select>
+		</p>
+		<input type="submit" value="computeBMI" onclick="computeBMI();">
+		
+		<h1>Your BMI is: <span id="output">?</span></h1>
+
+		<h2>This means you are: <span id="comment"> ?</span> </h2> 
+     </body>
+
+	
+<!-- <label for="username">Enter your weight</label>
+			<br/>
+			
+<input type="text" id="username">
+			<br/>
+			
+<label for="password">Password</label>
+			<br/>
+			
+<input type="password" id="password">
+			<br/>
+			
+<button type="submit">Sign In</button>
+			<br/>
+			
+<a href="#"><p class="small">Forgot your password?</p></a>
+		-->
+</div>
+	
+</div>
+</body>
+
+
+  <script type="text/javascript">	
+$(document).ready(function () {
+    	
+$('#logo').addClass('animated fadeInDown');
+    	
+  $("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		
+$('label[for="username"]').addClass('selected');
+	});
+	
+$('#username').blur(function() {
+		
+$('label[for="username"]').removeClass('selected');
+	});
+	
+$('#password').focus(function() {
+		
+$('label[for="password"]').addClass('selected');
+	});
+	
+$('#password').blur(function() {
+		
+$('label[for="password"]').removeClass('selected');
+	}); 
+
+
+ function computeBMI() {
+            // user inputs
+            var height = Number(document.getElementById("height").value);
+            var heightunits = document.getElementById("heightunits").value;
+            var weight = Number(document.getElementById("weight").value);
+            var weightunits = document.getElementById("weightunits").value;
+
+
+            //Convert all units to metric
+            if (heightunits == "inches") height /= 39.3700787;
+            if (weightunits == "lb") weight /= 2.20462;
+
+            //Perform calculation
+
+                   var BMI = weight /Math.pow(height, 2);
+            //var BMI = Math.round(weight / Math.pow(height, 2) * 10000);
+
+            //Display result of calculation
+            document.getElementById("output").innerText = Math.round(BMI * 100) / 100;
+
+            var output = Math.round(BMI * 100) / 100
+            if (output < 18.5)
+                document.getElementById("comment").innerText = "Underweight";
+            else if (output >= 18.5 && output <= 25)
+                document.getElementById("comment").innerText = "Normal";
+            else if (output >= 25 && output <= 30)
+                document.getElementById("comment").innerText = "Obese";
+            else if (output > 30)
+                document.getElementById("comment").innerText = "Overweight";
+            // document.getElementById("answer").value = output; 
+        }
+</script>
+
+
+</html>

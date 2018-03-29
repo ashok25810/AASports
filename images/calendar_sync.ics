@@ -1,0 +1,69 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+DTSTART:20180311T030000
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZNAME:CDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20181104T010000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20180326T141321Z
+UID:598-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/Chicago:20180402T080000
+DTEND;TZID=America/Chicago:20180406T170000
+CREATED:20160525T205335
+DESCRIPTION:
+LAST-MODIFIED:20180220T191247
+LOCATION:Ward Edwards Building\, E South St\, Warrensburg\, MO 64093\, USA
+SUMMARY:UCM Spring Employer Mock Interview Week 2018
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20180326T141321Z
+UID:3617-CareerFairSession@joinhandshake.com
+DTSTART;TZID=America/Chicago:20180314T090000
+DTEND;TZID=America/Chicago:20180314T110000
+CREATED:20170803T210521
+DESCRIPTION:<div><span class="wysiwyg-color-black">The\nCareer Services Cen
+ ter is hosting the annual</span><b><span class="wysiwyg-color-black"> Educ
+ ation Career Expo</span></b><span class="wysiwyg-color-black">&nbsp\;on </
+ span><b><span class="wysiwyg-color-black">Wednesday\, March 14th from 9-11
+  a.m.</span></b><span class="wysiwyg-color-black"> in the Multipurpose Bui
+ lding.<br><br>  </span></div><div>\n\n</div><div><span class="wysiwyg-colo
+ r-black">The\nCareer Expo is an ideal time for you to connect with 100+ sc
+ hool districts who are recruiting for positions within the field of educat
+ ion for the 2018-19 school year . <br><br> All are encouraged to attend\, 
+ regardless of\nclass status.  Underclassmen will find\nthis event to be be
+ neficial as it will provide an outlook on the job market in the field of e
+ ducation as\nwell as a chance to network. <br><br>Don’t forget\nto bring
+  several copies of your resume! <br><br> </span><b><span class="wysiwyg-co
+ lor-black">Professional attire is encouraged</span></b><span class="wysiwy
+ g-color-black">.</span></div>
+LAST-MODIFIED:20170807T205633
+LOCATION:Multipurpose Building\, S Washington St\, Warrensburg\, MO 64093\,
+  USA
+SUMMARY:Education Career Expo 2018
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20180326T141321Z
+UID:12388841-Application@joinhandshake.com
+DTSTART;TZID=America/Chicago:20180323T090336
+DTEND;TZID=America/Chicago:20180323T090336
+CREATED:20180323T140336
+LAST-MODIFIED:20180323T140336
+SUMMARY:Application for Software Engineering Intern
+END:VEVENT
+END:VCALENDAR
